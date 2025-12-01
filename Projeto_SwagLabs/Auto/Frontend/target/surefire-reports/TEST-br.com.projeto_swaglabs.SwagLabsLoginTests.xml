@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="br.com.projeto_swaglabs.SwagLabsLoginTests" time="43.229" tests="11" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\bruno\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="Y:\GitHub\Bruno Siqueira\QA_Proj_Selenium\QA_Proj_SeleniumWebDriver_SwagLabs\Projeto_SwagLabs\Auto\Frontend\target\test-classes;Y:\GitHub\Bruno Siqueira\QA_Proj_Selenium\QA_Proj_SeleniumWebDriver_SwagLabs\Projeto_SwagLabs\Auto\Frontend\target\classes;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-java\4.20.0\selenium-java-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-api\4.20.0\selenium-api-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.20.0\selenium-chrome-driver-4.20.0.jar;C:\Users\bruno\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.20.0\selenium-chromium-driver-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-json\4.20.0\selenium-json-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.20.0\selenium-manager-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.20.0\selenium-devtools-v122-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.20.0\selenium-devtools-v123-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.20.0\selenium-devtools-v124-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.20.0\selenium-devtools-v85-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.20.0\selenium-edge-driver-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.20.0\selenium-firefox-driver-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-http\4.20.0\selenium-http-4.20.0.jar;C:\Users\bruno\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.20.0\selenium-ie-driver-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.20.0\selenium-remote-driver-4.20.0.jar;C:\Users\bruno\.m2\repository\com\google\guava\guava\33.1.0-jre\guava-33.1.0-jre.jar;C:\Users\bruno\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\bruno\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\bruno\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\bruno\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\bruno\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\bruno\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-api\1.37.0\opentelemetry-api-1.37.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-context\1.37.0\opentelemetry-context-1.37.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.37.0\opentelemetry-exporter-logging-1.37.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.37.0\opentelemetry-sdk-common-1.37.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.37.0\opentelemetry-sdk-extension-autoconfigure-spi-1.37.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.37.0\opentelemetry-sdk-extension-autoconfigure-1.37.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.37.0-alpha\opentelemetry-api-incubator-1.37.0-alpha.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.37.0\opentelemetry-sdk-trace-1.37.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.37.0\opentelemetry-sdk-1.37.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.37.0\opentelemetry-sdk-metrics-1.37.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.37.0\opentelemetry-sdk-logs-1.37.0.jar;C:\Users\bruno\.m2\repository\net\bytebuddy\byte-buddy\1.14.14\byte-buddy-1.14.14.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-os\4.20.0\selenium-os-4.20.0.jar;C:\Users\bruno\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.20.0\selenium-safari-driver-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-support\4.20.0\selenium-support-4.20.0.jar;C:\Users\bruno\.m2\repository\io\github\bonigarcia\webdrivermanager\5.8.0\webdrivermanager-5.8.0.jar;C:\Users\bruno\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\bruno\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\bruno\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\bruno\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\bruno\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\bruno\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\bruno\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\bruno\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\bruno\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\bruno\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\bruno\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\bruno\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\bruno\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\bruno\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\bruno\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\bruno\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\bruno\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\bruno\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar;C:\Users\bruno\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\bruno\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\bruno\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\bruno\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\bruno\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\bruno\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\bruno\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\bruno\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\bruno\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\bruno\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\bruno\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\bruno\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\bruno\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\bruno\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\bruno\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://www.azul.com/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="user.country.format" value="BR"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="MX"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\zulu21.32.17-ca-jdk21.0.2-win_x64\bin"/>
+    <property name="sun.java.command" value="C:\Users\bruno\AppData\Local\Temp\surefire4968550929396140098\surefirebooter-20251201011120154_3.jar C:\Users\bruno\AppData\Local\Temp\surefire4968550929396140098 2025-12-01T01-11-19_913-jvmRun1 surefire-20251201011120154_1tmp surefire_0-20251201011120154_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="Y:\GitHub\Bruno Siqueira\QA_Proj_Selenium\QA_Proj_SeleniumWebDriver_SwagLabs\Projeto_SwagLabs\Auto\Frontend\target\test-classes;Y:\GitHub\Bruno Siqueira\QA_Proj_Selenium\QA_Proj_SeleniumWebDriver_SwagLabs\Projeto_SwagLabs\Auto\Frontend\target\classes;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-java\4.20.0\selenium-java-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-api\4.20.0\selenium-api-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.20.0\selenium-chrome-driver-4.20.0.jar;C:\Users\bruno\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.20.0\selenium-chromium-driver-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-json\4.20.0\selenium-json-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.20.0\selenium-manager-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.20.0\selenium-devtools-v122-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.20.0\selenium-devtools-v123-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.20.0\selenium-devtools-v124-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.20.0\selenium-devtools-v85-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.20.0\selenium-edge-driver-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.20.0\selenium-firefox-driver-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-http\4.20.0\selenium-http-4.20.0.jar;C:\Users\bruno\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.20.0\selenium-ie-driver-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.20.0\selenium-remote-driver-4.20.0.jar;C:\Users\bruno\.m2\repository\com\google\guava\guava\33.1.0-jre\guava-33.1.0-jre.jar;C:\Users\bruno\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\bruno\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\bruno\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\bruno\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\bruno\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\bruno\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-api\1.37.0\opentelemetry-api-1.37.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-context\1.37.0\opentelemetry-context-1.37.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.37.0\opentelemetry-exporter-logging-1.37.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.37.0\opentelemetry-sdk-common-1.37.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.37.0\opentelemetry-sdk-extension-autoconfigure-spi-1.37.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.37.0\opentelemetry-sdk-extension-autoconfigure-1.37.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.37.0-alpha\opentelemetry-api-incubator-1.37.0-alpha.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.37.0\opentelemetry-sdk-trace-1.37.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.37.0\opentelemetry-sdk-1.37.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.37.0\opentelemetry-sdk-metrics-1.37.0.jar;C:\Users\bruno\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.37.0\opentelemetry-sdk-logs-1.37.0.jar;C:\Users\bruno\.m2\repository\net\bytebuddy\byte-buddy\1.14.14\byte-buddy-1.14.14.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-os\4.20.0\selenium-os-4.20.0.jar;C:\Users\bruno\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.20.0\selenium-safari-driver-4.20.0.jar;C:\Users\bruno\.m2\repository\org\seleniumhq\selenium\selenium-support\4.20.0\selenium-support-4.20.0.jar;C:\Users\bruno\.m2\repository\io\github\bonigarcia\webdrivermanager\5.8.0\webdrivermanager-5.8.0.jar;C:\Users\bruno\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\bruno\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\bruno\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\bruno\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\bruno\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\bruno\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\bruno\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\bruno\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\bruno\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\bruno\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\bruno\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\bruno\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\bruno\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\bruno\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\bruno\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\bruno\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\bruno\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\bruno\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar;C:\Users\bruno\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\bruno\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\bruno\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\bruno\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\bruno\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\bruno\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\bruno\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\bruno\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\bruno\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\bruno\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\bruno\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\bruno\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\bruno\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\bruno\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\bruno\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\bruno"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="C:\Program Files\Java\zulu21.32.17-ca-jdk21.0.2-win_x64"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="Y:\GitHub\Bruno Siqueira\QA_Proj_Selenium\QA_Proj_SeleniumWebDriver_SwagLabs\Projeto_SwagLabs\Auto\Frontend"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\bruno\AppData\Local\Temp\surefire4968550929396140098\surefirebooter-20251201011120154_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.2+13-LTS"/>
+    <property name="user.name" value="bruno"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Zulu21.32+17-CA"/>
+    <property name="localRepository" value="C:\Users\bruno\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azul.com/support/"/>
+    <property name="java.io.tmpdir" value="C:\Users\bruno\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.2"/>
+    <property name="user.dir" value="Y:\GitHub\Bruno Siqueira\QA_Proj_Selenium\QA_Proj_SeleniumWebDriver_SwagLabs\Projeto_SwagLabs\Auto\Frontend"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.language.format" value="pt"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\zulu21.32.17-ca-jdk21.0.2-win_x64\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\bruno\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\bruno\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\bruno\AppData\Roaming\Python\Python312\Scripts;C:\Users\bruno\AppData\Roaming\Python\Python312\;C:\Program Files\Java\jdk-11\bin;C:\apache-maven-3.9.9\bin;C:\Program Files\Java\zulu21.32.17-ca-jdk21.0.2-win_x64\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Users\bruno\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\bruno\AppData\Local\Programs\Python\Python314\;C:\Users\bruno\AppData\Roaming\Python\Python312\Scripts;C:\Users\bruno\AppData\Roaming\Python\Python312\;C:\Program Files\Java\jdk-11\bin;C:\apache-maven-3.9.9\bin;C:\Program Files\Java\zulu21.32.17-ca-jdk21.0.2-win_x64\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;;C:\Users\bruno\AppData\Roaming\Python\Python312\Scripts;C:\Users\bruno\AppData\Roaming\Python\Python312\;C:\Users\bruno\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\bruno\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\bruno\AppData\Local\Python\bin;c:\Users\bruno\.vscode\extensions\ms-python.debugpy-2025.16.0-win32-x64\bundled\scripts\noConfigScriptsc:\Users\bruno\.vscode\extensions\vscjava.vscode-java-debug-0.58.3\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="21.0.2+13-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="loginSemUsernameESemPassword" classname="br.com.projeto_swaglabs.SwagLabsLoginTests" time="4.805">
+    <system-out><![CDATA[01:11:22.327 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+01:11:23.029 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=142 in cache (valid until 01:15:17 01/12/2025 BRT)
+01:11:23.030 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome142=142.0.7444.175 in cache (valid until 23:12:35 01/12/2025 BRT)
+01:11:23.031 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+01:11:23.071 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 142.0.7444.175 found in cache
+01:11:23.072 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\bruno\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+]]></system-out>
+    <system-err><![CDATA[dez. 01, 2025 1:11:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 142
+dez. 01, 2025 1:11:25 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 142.0.7444.163. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.20.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="loginComErrorUser" classname="br.com.projeto_swaglabs.SwagLabsLoginTests" time="3.183">
+    <system-out><![CDATA[01:11:26.737 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+01:11:26.748 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=142 in cache (valid until 01:15:17 01/12/2025 BRT)
+01:11:26.749 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome142=142.0.7444.175 in cache (valid until 23:12:35 01/12/2025 BRT)
+01:11:26.749 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+01:11:26.762 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 142.0.7444.175 found in cache
+01:11:26.763 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\bruno\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+]]></system-out>
+    <system-err><![CDATA[dez. 01, 2025 1:11:28 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 142
+dez. 01, 2025 1:11:28 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 142.0.7444.163. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.20.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="loginComVisualUser" classname="br.com.projeto_swaglabs.SwagLabsLoginTests" time="3.388">
+    <system-out><![CDATA[01:11:29.921 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+01:11:29.935 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=142 in cache (valid until 01:15:17 01/12/2025 BRT)
+01:11:29.936 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome142=142.0.7444.175 in cache (valid until 23:12:35 01/12/2025 BRT)
+01:11:29.936 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+01:11:29.949 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 142.0.7444.175 found in cache
+01:11:29.950 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\bruno\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+]]></system-out>
+    <system-err><![CDATA[dez. 01, 2025 1:11:31 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 142
+dez. 01, 2025 1:11:31 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 142.0.7444.163. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.20.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="loginComApenasUsername" classname="br.com.projeto_swaglabs.SwagLabsLoginTests" time="3.142">
+    <system-out><![CDATA[01:11:33.311 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+01:11:33.323 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=142 in cache (valid until 01:15:17 01/12/2025 BRT)
+01:11:33.325 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome142=142.0.7444.175 in cache (valid until 23:12:35 01/12/2025 BRT)
+01:11:33.325 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+01:11:33.335 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 142.0.7444.175 found in cache
+01:11:33.336 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\bruno\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+]]></system-out>
+    <system-err><![CDATA[dez. 01, 2025 1:11:34 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 142
+dez. 01, 2025 1:11:34 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 142.0.7444.163. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.20.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="loginComApenasPassword" classname="br.com.projeto_swaglabs.SwagLabsLoginTests" time="2.682">
+    <system-out><![CDATA[01:11:36.454 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+01:11:36.464 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=142 in cache (valid until 01:15:17 01/12/2025 BRT)
+01:11:36.465 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome142=142.0.7444.175 in cache (valid until 23:12:35 01/12/2025 BRT)
+01:11:36.465 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+01:11:36.475 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 142.0.7444.175 found in cache
+01:11:36.476 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\bruno\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+]]></system-out>
+    <system-err><![CDATA[dez. 01, 2025 1:11:37 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 142
+dez. 01, 2025 1:11:37 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 142.0.7444.163. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.20.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="loginComUsernameInvalidoEPasswordValido" classname="br.com.projeto_swaglabs.SwagLabsLoginTests" time="3.051">
+    <system-out><![CDATA[01:11:39.139 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+01:11:39.152 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=142 in cache (valid until 01:15:17 01/12/2025 BRT)
+01:11:39.153 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome142=142.0.7444.175 in cache (valid until 23:12:35 01/12/2025 BRT)
+01:11:39.153 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+01:11:39.165 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 142.0.7444.175 found in cache
+01:11:39.166 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\bruno\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+]]></system-out>
+    <system-err><![CDATA[dez. 01, 2025 1:11:40 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 142
+dez. 01, 2025 1:11:40 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 142.0.7444.163. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.20.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="loginComUsernameValidoEPasswordInvalido" classname="br.com.projeto_swaglabs.SwagLabsLoginTests" time="2.903">
+    <system-out><![CDATA[01:11:42.190 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+01:11:42.196 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=142 in cache (valid until 01:15:17 01/12/2025 BRT)
+01:11:42.197 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome142=142.0.7444.175 in cache (valid until 23:12:35 01/12/2025 BRT)
+01:11:42.197 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+01:11:42.204 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 142.0.7444.175 found in cache
+01:11:42.205 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\bruno\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+]]></system-out>
+    <system-err><![CDATA[dez. 01, 2025 1:11:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 142
+dez. 01, 2025 1:11:43 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 142.0.7444.163. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.20.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="loginComLockedOutUser" classname="br.com.projeto_swaglabs.SwagLabsLoginTests" time="3.922">
+    <system-out><![CDATA[01:11:45.096 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+01:11:45.112 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=142 in cache (valid until 01:15:17 01/12/2025 BRT)
+01:11:45.112 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome142=142.0.7444.175 in cache (valid until 23:12:35 01/12/2025 BRT)
+01:11:45.113 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+01:11:45.124 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 142.0.7444.175 found in cache
+01:11:45.125 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\bruno\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+]]></system-out>
+    <system-err><![CDATA[dez. 01, 2025 1:11:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 142
+dez. 01, 2025 1:11:46 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 142.0.7444.163. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.20.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="loginComStandardUser" classname="br.com.projeto_swaglabs.SwagLabsLoginTests" time="3.706">
+    <system-out><![CDATA[01:11:49.019 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+01:11:49.026 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=142 in cache (valid until 01:15:17 01/12/2025 BRT)
+01:11:49.026 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome142=142.0.7444.175 in cache (valid until 23:12:35 01/12/2025 BRT)
+01:11:49.027 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+01:11:49.034 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 142.0.7444.175 found in cache
+01:11:49.035 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\bruno\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+]]></system-out>
+    <system-err><![CDATA[dez. 01, 2025 1:11:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 142
+dez. 01, 2025 1:11:50 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 142.0.7444.163. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.20.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="loginComProblemUser" classname="br.com.projeto_swaglabs.SwagLabsLoginTests" time="4.247">
+    <system-out><![CDATA[01:11:52.727 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+01:11:52.735 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=142 in cache (valid until 01:15:17 01/12/2025 BRT)
+01:11:52.735 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome142=142.0.7444.175 in cache (valid until 23:12:35 01/12/2025 BRT)
+01:11:52.735 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+01:11:52.745 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 142.0.7444.175 found in cache
+01:11:52.745 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\bruno\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+]]></system-out>
+    <system-err><![CDATA[dez. 01, 2025 1:11:54 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 142
+dez. 01, 2025 1:11:54 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 142.0.7444.163. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.20.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="loginComPerformanceGlitchUser" classname="br.com.projeto_swaglabs.SwagLabsLoginTests" time="8.116">
+    <system-out><![CDATA[01:11:56.974 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+01:11:56.983 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=142 in cache (valid until 01:15:17 01/12/2025 BRT)
+01:11:56.984 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome142=142.0.7444.175 in cache (valid until 23:12:35 01/12/2025 BRT)
+01:11:56.984 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+01:11:56.992 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 142.0.7444.175 found in cache
+01:11:56.993 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\bruno\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+]]></system-out>
+    <system-err><![CDATA[dez. 01, 2025 1:11:58 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 142
+dez. 01, 2025 1:11:58 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 142.0.7444.163. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.20.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>
